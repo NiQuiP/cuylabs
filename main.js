@@ -1,4 +1,4 @@
-const endpoint = "https://cors-anywhere.herokuapp.com/http://192.168.1.16";
+const endpoint = "http://192.168.1.16";
 
 function setDapurLed() {
   fetch(endpoint + "/dapur", {
