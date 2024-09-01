@@ -102,6 +102,15 @@ function getToiletLed() {
     });
 }
 
+function proxy(){
+  fetch("http://192.168.1.16/proxy?url=http://192.168.1.16/toilet", {
+    method: "GET",
+  })
+  .then(response => response.text())
+  .then(result => console.log(result));
+}
+
+proxy();
 getDapurLed();
 getTamuLed();
 getMakanLed();
